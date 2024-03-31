@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 16px;
+    background-color: var(--pale-blue);
+}
+
+:root{
+    --pale-blue:hsl(225, 100%, 94%);
+    --bright-blue:hsl(245, 75%, 52%);
+    --very-pale-blue:hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue:hsl(223, 47%, 23%);
+}
+
+main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width:400px;
+    height:80vh;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.container-img img{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    height: 100%;
+}
+
+.container-text{
+    height: 60%;
+    padding: 0 2.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+h2{
+    font-weight: 900;
+}
+
+.summary-description{
+    color: var(--desaturated-blue);
+    line-height: 20px;
+    font-size: 14px;
+}
+
+.plan{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--very-pale-blue);
+    border: 1px solid black;
+    padding: 1rem 1rem;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+}
+
+.plan-icon{
+    margin-right: 1rem;
+}
+
+.plan-left{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.plan-detail > p:first-child{
+    font-weight: bold;
+    margin-bottom: 0.25rem;
+}
+
+.plan-detail > p:last-child{
+    color: var(--desaturated-blue);
+}
+
+.plan-right{
+    color: var(--bright-blue);
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.payment-btn{
+    color: var(--very-pale-blue);
+    background-color: var(--bright-blue);
+    padding: 0.75rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 10px;
+    font-weight: bold;
+    box-shadow: 0px 10px 74px 17px hsl(225, 100%, 94%);
+}
+
+.cancel-btn{
+    color: var(--desaturated-blue);
+    background-color: var(--very-pale-blue);
+    padding: 0.75rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
